@@ -1,11 +1,11 @@
 <html>
 <head>
-       <title>Create Office Hours</title>
-       <style>
-		body { font-family:sans-serif; }
-		label { font-weight:bold; width:100px; }
-		.box { border:#666666 solid 1px; }
-	</style>
+    <title>Create Office Hours</title>
+    <link href="link/stylishish.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script>
 		//This Script will create Term Codes and a function to populate the term code drop down selection
 		function getCurrentYear()
@@ -27,32 +27,26 @@
 </head>
 
 <body onLoad="createTermCodeDropdown()">
-	<h1>Welcome </h1> 
-	<div align="center">
-		<div style="width:300px; border:solid 1px #333333;" align="left">
-			<div style="background-color:#333333; color:#FFFFFF; padding:3px;"><b>Office Hours Input</b></div>
-			<div style="margin:30px">
-				<form>
-					<label>Term Code: </label>
-					<select name="termCode" id="termCode" required class="box">
-						<option value="">Please select a term</option>
-					</select></br></br>
-					<label>Day of Week: </label>
-					<select name="weekday" required class="box">
-						<option value="Monday" selected>Monday</option>
-						<option value="Tuesday">Tuesday</option>
-						<option value="Wednesday">Wednesday</option>
-						<option value="Thursday">Thursday</option>
-						<option value="Friday">Friday</option>
-					</select><br/><br/>
-					<label>Time Start: </label><input type="time" name="timeStart" min="09:00" max="18:00" required class="box" /><br/><br/>
-					<label>Time End: </label><input type="time" name="timeEnd" min="09:00" max="18:00" required class="box" /><br/><br/>
-					<input type="submit" value=" Add "/><br/>
-				</form>
-				<a href="userLandingPage.html">Return to Main Menu</a>
-				<div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>
-			</div>
-		</div>
+	<h1>Welcome, Instructor!</h1> 
+	<div class="main">
+		<form><br/>
+			<label>Term Code: </label>
+			<select name="termCode" id="termCode" required class="box">
+				<option value="">Please select a term</option>
+			</select></br></br>
+			<label>Day of Week: </label>
+			<select name="weekday" required class="box">
+				<option value="Monday" selected>Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+			</select><br/><br/>
+			<label>Time Start: </label><input type="time" name="timeStart" min="09:00" max="18:00" required class="box" /><br/><br/>
+			<label>Time End: </label><input type="time" name="timeEnd" min="09:00" max="18:00" required class="box" /><br/><br/>
+			<input type="submit" value=" Add "/><br/>
+		</form>
+		<a href="userLandingPage.html">Return to Main Menu</a>	
 	</div>
 </body>
 </html>
